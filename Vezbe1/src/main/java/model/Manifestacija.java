@@ -47,4 +47,9 @@ public class Manifestacija {
 		this.cena = cena;
 	}
 
+	@Override
+	public String toString() {
+		return "Manifestacija [ime=" + ime + ", mesto=" + mesto + ", kapacitet=" + kapacitet + ", cena=" + cena + "]";
+	}
+
 }
