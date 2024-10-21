@@ -1,11 +1,14 @@
 package model;
 
+import java.time.LocalDateTime;
+
 public class Manifestacija {
 
 	private String ime;
 	private String mesto;
 	private int kapacitet;
 	private String cena;
+	private LocalDateTime datum;
 
 	public Manifestacija(String ime, String mesto, int kapacitet, String cena) {
 		super();
@@ -13,6 +16,7 @@ public class Manifestacija {
 		this.mesto = mesto;
 		this.kapacitet = kapacitet;
 		this.cena = cena;
+		this.datum = LocalDateTime.now();
 	}
 
 	public String getIme() {
@@ -45,6 +49,14 @@ public class Manifestacija {
 
 	public void setCena(String cena) {
 		this.cena = cena;
+	}
+
+	public LocalDateTime getDatum() {
+		return datum;
+	}
+
+	public void setDatum(LocalDateTime datum) {
+		this.datum = datum;
 	}
 
 	@Override

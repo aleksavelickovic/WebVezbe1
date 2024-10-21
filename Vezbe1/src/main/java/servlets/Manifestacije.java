@@ -1,6 +1,7 @@
 package servlets;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -73,7 +74,8 @@ public class Manifestacije extends HttpServlet {
 							+ Manifestacije.get(i).getIme() + "</h1>\r\n" + "<p>Mesto odrzavanja: "
 							+ Manifestacije.get(i).getMesto() + "</p>\r\n" + "<p>Kapacitet: "
 							+ Manifestacije.get(i).getKapacitet() + "</p>\r\n" + "<p>Cena ulaznice: "
-							+ Manifestacije.get(i).getCena() + "</p>");
+							+ Manifestacije.get(i).getCena() + "</p>" + "<p>Datum dodavanja na server:  "
+							+ Manifestacije.get(i).getDatum() + "</p>");
 		}
 
 		response.getWriter().append("<a href=\"pocetna.html\">Unesi jos</a>\r\n" + "</body>\r\n" + "</html>");
